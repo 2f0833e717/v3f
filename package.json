@@ -8,7 +8,7 @@
   "author": "skinoshita202001082135@gmail.com",
   "private": true,
   "scripts": {
-    "run": "quasar dev",
+    "serve": "quasar dev",
     "ui": "vue ui",
     "lint": "eslint --ext .js,.vue src",
     "test": "echo \"No test specified\" && exit 0"
