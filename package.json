@@ -9,6 +9,7 @@
   "private": true,
   "scripts": {
     "run": "quasar dev",
+    "ui": "vue ui",
     "lint": "eslint --ext .js,.vue src",
     "test": "echo \"No test specified\" && exit 0"
   },
