@@ -11,7 +11,8 @@
     "serve": "quasar dev",
     "ui": "vue ui",
     "lint": "eslint --ext .js,.vue src",
-    "test": "renovate-config-validator"
+    "test": "renovate-config-validator",
+    "deploy": "firebase deploy"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
