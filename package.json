@@ -9,6 +9,7 @@
   "private": true,
   "scripts": {
     "serve": "quasar dev",
+    "build": "quasar build",
     "ui": "vue ui",
     "lint": "eslint --ext .js,.vue src",
     "test": "renovate-config-validator",
