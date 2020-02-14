@@ -11,7 +11,7 @@
     "serve": "quasar dev",
     "ui": "vue ui",
     "lint": "eslint --ext .js,.vue src",
-    "test": "echo \"No test specified\" && exit 0"
+    "test": "renovate-config-validator"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
