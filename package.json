@@ -9,8 +9,10 @@
   "private": true,
   "scripts": {
     "serve": "quasar dev",
+    "d": "quasar dev",
     "_comment": "quasar clean and quasar build.",
     "build": "quasar c | quasar b",
+    "b": "quasar c | quasar b",
     "ui": "vue ui",
     "lint": "eslint --ext .js,.vue src",
     "test": "renovate-config-validator",
