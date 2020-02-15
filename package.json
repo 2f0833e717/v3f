@@ -31,6 +31,7 @@
     "de": "firebase deploy",
     "ee": "npm run rebuild && npm run deploy",
     "ui": "vue ui",
+    "qupg": "quasar upgrade --install && quasar info",
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
