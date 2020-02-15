@@ -29,7 +29,7 @@
     "_comment:firebase deploy": "firebase deploy",
     "deploy": "firebase deploy",
     "de": "firebase deploy",
-    "ee": "run-s rebuild | deploy",
+    "ee": "npm r rebuild && npm r deploy",
     "ui": "vue ui",
     "lint": "eslint --ext .js,.vue src"
   },
