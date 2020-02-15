@@ -88,6 +88,6 @@ module.exports = {
     // <component> indent 2
     "vue/html-indent": ["error", 2],
     //
-    "space-before-function-paren": [1, "never"],
+    "space-before-function-paren": [0, "never"],
   }
 }
