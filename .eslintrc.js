@@ -14,12 +14,17 @@ module.exports = {
     // https://eslint.vuejs.org/rules/#priority-a-essential-error-prevention
     // consider switching to `plugin:vue/strongly-recommended` or `plugin:vue/recommended` for stricter rules.
     'plugin:vue/essential',
-    '@vue/standard'
+    // 'plugin:vue/recommended',
+    // '@vue/standard',
+    // 'vue',
+    'plugin:import/errors',
+    'plugin:import/warnings'
   ],
 
   // required to lint *.vue files
   plugins: [
-    'vue'
+    'vue',
+    'import'
   ],
 
   globals: {
@@ -28,7 +33,8 @@ module.exports = {
     '__statics': true,
     'process': true,
     'Capacitor': true,
-    'chrome': true
+    'chrome': true,
+    'Vue': true,
   },
 
   // add your custom rules here
@@ -53,7 +59,7 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
 
     // custom rules
-    // 
+    // https://eslint.org/docs/rules/
     "multiline": "never",
     // 不要なカッコは消す
     "no-extra-parens": 1,
@@ -61,12 +67,14 @@ module.exports = {
     "no-multi-spaces": 2,
     // 関数とカッコはあけない(function hoge() {/** */})
     "func-call-spacing": [2, "never"],
+    // セミコロンは禁止
+    "semi": [2, "never"],
     // 文字列はシングルクオートのみ
     "quotes": [2, "single"],
     // varは禁止
     "no-var": 2,
     // jsのインデントは２
-    "indent": [2, 2],
+    "indent": ["error", 2],
     // かっこの中はスペースなし！違和感
     "space-in-parens": [2, "never"],
     // コンソールは許可
@@ -77,5 +85,9 @@ module.exports = {
     "key-spacing": 2,
     // キーワードの前後には適切なスペースを
     "keyword-spacing": 2,
+    // <component> indent 2
+    "vue/html-indent": ["error", 2],
+    //
+    "space-before-function-paren": [1, "never"],
   }
 }
