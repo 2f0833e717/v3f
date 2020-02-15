@@ -8,15 +8,30 @@
   "author": "skinoshita202001082135@gmail.com",
   "private": true,
   "scripts": {
+    "_comment": "this is comment.",
+    "_comment:build and run": "build and run",
     "serve": "quasar dev",
+    "run": "quasar dev",
     "d": "quasar dev",
-    "_comment": "quasar clean and quasar build.",
-    "build": "quasar c | quasar b",
-    "b": "quasar c | quasar b",
-    "ui": "vue ui",
-    "lint": "eslint --ext .js,.vue src",
+
+    "_comment:clean and build": "clean and build",
+    "rebuild": "quasar clean | quasar build",
+    "reb": "quasar clean | quasar build",
+    "rb": "quasar clean | quasar build",
+
+    "_comment:bulid": "build",
+    "build": "quasar build",
+    "b": "quasar build",
+
+    "_comment:test": "test",
     "test": "renovate-config-validator",
-    "deploy": "firebase deploy"
+
+    "_comment:firebase deploy": "firebase deploy",
+    "deploy": "firebase deploy",
+    "de": "firebase deploy",
+
+    "ui": "vue ui",
+    "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
