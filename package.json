@@ -9,27 +9,27 @@
   "private": true,
   "scripts": {
     "_comment": "this is comment.",
-    "_comment:build and run": "build and run",
+    "_comment:src build dev run": "src build dev run",
     "serve": "quasar dev",
-    "run": "quasar dev",
+    "dev": "quasar dev",
     "d": "quasar dev",
-
+    "_comment:clean and dev": "clean and dev",
+    "redev": "quasar clean | quasar dev",
+    "red": "quasar clean | quasar dev",
+    "rd": "quasar clean | quasar dev",
+    "_comment:bulid": "build",
+    "build": "quasar build",
+    "b": "quasar build",
     "_comment:clean and build": "clean and build",
     "rebuild": "quasar clean | quasar build",
     "reb": "quasar clean | quasar build",
     "rb": "quasar clean | quasar build",
-
-    "_comment:bulid": "build",
-    "build": "quasar build",
-    "b": "quasar build",
-
     "_comment:test": "test",
     "test": "renovate-config-validator",
-
     "_comment:firebase deploy": "firebase deploy",
     "deploy": "firebase deploy",
     "de": "firebase deploy",
-
+    "ee": "run-s rebuild | deploy",
     "ui": "vue ui",
     "lint": "eslint --ext .js,.vue src"
   },
