@@ -50,6 +50,9 @@ export default {
   components: {
     EssentialLink
   },
+  created () {
+    this.$q.addressbarColor.set('#000')
+  },
 
   data () {
     return {
