@@ -12,5 +12,4 @@
   "files.trimTrailingWhitespace": true,
   "eslint.format.enable": true,
   "html.format.wrapAttributes": "force-aligned",
-  // "prettier.semi": false
 }
