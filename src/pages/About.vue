@@ -47,6 +47,8 @@
           >
             <q-item-section avatar>
               <q-avatar
+                size="40px"
+                icon="mail"
                 color="primary"
                 text-color="white"
               />
@@ -72,6 +74,8 @@
           >
             <q-item-section avatar>
               <q-avatar
+                size="40px"
+                icon="account_circle"
                 color="primary"
                 text-color="white"
               />

@@ -57,7 +57,6 @@
           size="10px"
           skip-hijack
         />
-        <!-- <q-btn color="primary" to="/loading" label="Trigger" @click="trigger"></q-btn> -->
       </div>
     </div>
   </q-page>
@@ -90,14 +89,13 @@ export default {
   },
 
   methods: {
-    "motion-root": require("components/MotionRoot.vue").default,
     close: function () {
     	this.class = "_close"
     },
     open: function () {
+      trigger()
       this.class = "_open"
     },
-
     trigger() {
       const bar = this.$refs.bar
       const foo = this.$refs.foo
