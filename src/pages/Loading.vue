@@ -1,3 +1,4 @@
+/* eslint-disable */
 <template>
   <div>
     <p>Loading.vue</p>
@@ -9,9 +10,9 @@
 
 <script>
 export default {
-  name: 'Loading',
-  components: {
-    'motion-root': require('components/MotionRoot.vue').default,
+  name: "Loading",
+  methods: {
+    "motion-root": require("components/MotionRoot.vue").default
   }
-}
+};
 </script>
