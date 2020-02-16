@@ -4,13 +4,13 @@ const routes = [
     name: "root",
     component: () => import("layouts/MainLayout.vue"),
     beforeEnter: (to, from, next) => {
-      console.log('route(root):beforeEnter');
-      next();
+      console.log("route(root):beforeEnter")
+      next()
     },
     children: [
       { path: "", component: () => import("pages/Index.vue") },
-      { path: "/loading", component: () => import("pages/Loading.vue") }
-    ]
+      { path: "/loading", component: () => import("pages/Loading.vue") },
+    ],
   },
   // {
   //   path: '/loading',
@@ -18,16 +18,16 @@ const routes = [
   // },
   {
     path: "/about",
-    component: () => import("pages/About.vue")
-  }
-];
+    component: () => import("pages/About.vue"),
+  },
+]
 
 // Always leave this as last one
 if (process.env.MODE !== "ssr") {
   routes.push({
     path: "*",
-    component: () => import("pages/Error404.vue")
-  });
+    component: () => import("pages/Error404.vue"),
+  })
 }
 
-export default routes;
+export default routes

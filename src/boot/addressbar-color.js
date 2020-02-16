@@ -1,6 +1,6 @@
 
-import { AddressbarColor } from 'quasar'
+import { AddressbarColor } from "quasar"
 
 export default () => {
-  AddressbarColor.set('#000')
+  AddressbarColor.set("#000")
 }

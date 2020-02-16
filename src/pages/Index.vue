@@ -3,49 +3,63 @@
   <q-page padding>
     <q>index.vue</q>
     <q-tabs>
-      <q-route-tab icon="autorenew" to="/loading" exact />
-      <q-route-tab icon="account_circle" to="/about" exact />
+      <q-route-tab
+        icon="autorenew"
+        to="/loading"
+        exact
+      />
+      <q-route-tab
+        icon="account_circle"
+        to="/about"
+        exact
+      />
     </q-tabs>
-    <router-link to="/loading" icon="autorenew" exact @click="trigger">
+    <router-link
+      to="/loading"
+      icon="autorenew"
+      exact
+      @click="trigger"
+    >
       loading
     </router-link>
-    <transition>
-      <div id="q-app" class="this.class">
-        <div class="q-pa-md">
-          <q-ajax-bar
-            ref="bar"
-            reverse
-            position="right"
-            color="red-14"
-            size="10px"
-            skip-hijack
-          ></q-ajax-bar>
-          <q-ajax-bar
-            ref="foo"
-            position="left"
-            color="red-14"
-            size="10px"
-            skip-hijack
-          ></q-ajax-bar>
-          <q-ajax-bar
-            ref="boo"
-            position="bottom"
-            color="red-14"
-            size="10px"
-            skip-hijack
-          ></q-ajax-bar>
-          <q-ajax-bar
-            ref="too"
-            reverse
-            position="top"
-            color="red-14"
-            size="10px"
-            skip-hijack
-          ></q-ajax-bar>
-          <!-- <q-btn color="primary" to="/loading" label="Trigger" @click="trigger"></q-btn> -->
-        </div>
+    <div
+      id="q-app"
+      class="this.class"
+    >
+      <div class="q-pa-md">
+        <q-ajax-bar
+          ref="bar"
+          reverse
+          position="right"
+          color="red-14"
+          size="10px"
+          skip-hijack
+        />
+        <q-ajax-bar
+          ref="foo"
+          position="left"
+          color="red-14"
+          size="10px"
+          skip-hijack
+        />
+        <q-ajax-bar
+          ref="boo"
+          position="bottom"
+          color="red-14"
+          size="10px"
+          skip-hijack
+        />
+        <q-ajax-bar
+          ref="too"
+          reverse
+          position="top"
+          color="red-14"
+          size="10px"
+          skip-hijack
+        />
+        <!-- <q-btn color="primary" to="/loading" label="Trigger" @click="trigger"></q-btn> -->
       </div>
-    </transition>
+    </div>
   </q-page>
 </template>
 
@@ -54,34 +68,34 @@ export default {
   data() {
     return {
       isOpen: true,
-      class: '_open'
+      class: "_open"
     }
   },
   watch: {
-    'isOpen': function () {
+    "isOpen": function () {
       console.log(this.isOpen)
-      this.isOpen ? this.open() : this.close();
+      this.isOpen ? this.open() : this.close()
     }
   },
   mounted () {
     this.$router.beforeEach((to, from, next) => {
-      this.isOpen = false;
-      next();
+      this.isOpen = false
+      next()
     })
     this.$router.afterEach((to, from, next) => {
-      setTimeout( () => {
-        this.isOpen = true;
-      }, 800);
+      setTimeout(() => {
+        this.isOpen = true
+      }, 800)
     })
   },
 
   methods: {
     "motion-root": require("components/MotionRoot.vue").default,
     close: function () {
-    	this.class = '_close';
+    	this.class = "_close"
     },
     open: function () {
-      this.class = '_open';
+      this.class = "_open"
     },
 
     trigger() {

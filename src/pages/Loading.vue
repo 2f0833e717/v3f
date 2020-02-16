@@ -3,7 +3,7 @@
   <div>
     <p>Loading.vue</p>
     <div>
-      <motion-root></motion-root>
+      <motion-root />
     </div>
   </div>
 </template>
@@ -14,5 +14,5 @@ export default {
   methods: {
     "motion-root": require("components/MotionRoot.vue").default
   }
-};
+}
 </script>
