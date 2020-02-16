@@ -29,7 +29,7 @@
     "_comment:firebase deploy": "firebase deploy",
     "deploy": "firebase deploy",
     "de": "firebase deploy",
-    "ee": "npm run rebuild && npm run deploy",
+    "ee": "npm run rebuild && npm run deploy && npm run dev",
     "ui": "vue ui",
     "qupg": "quasar upgrade --install && quasar info",
     "lintpath": "export PATH=$PATH:./node_modules/.bin",
