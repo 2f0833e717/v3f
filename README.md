@@ -1,23 +1,29 @@
 # WIP...
 
 if you build & run
-```bash
+```[bash]
+[bash]
 cat package.json
 ```
 ->>
+```[package.json]
+[package.json]
   "scripts": {
   ...
-<<-
+```
 how 2 use
-```bash
+```[bash]
+[bash]
 npm run {scripts command}
 ```
-```bash e.g. package.json ->> "dev": "quasar dev",
+```[bash e.g. package.json ->> "dev": "quasar dev",]
+[bash e.g. package.json ->> "dev": "quasar dev",]
 npm run dev
 ```
 
 [install nodejs & npm(n package stable)] on ubuntu 18.04 LTS
-```bash step1
+```[bash step1]
+[bash step1]
 sudo apt-get update
 sudo apt-get install -y nodejs
 sudo apt-get install -y npm
@@ -32,7 +38,8 @@ sudo apt-get purge nodejs
 sudo apt-get purge npm
 sudo apt-get autoremove #Y
 ```
-```bash step2
+```[bash step2]
+[bash step2]
 sudo n stable
 sudo ln -sf /usr/local/bin/node /usr/bin/node
 
@@ -44,7 +51,8 @@ sudo npm list --depth=0
 ```
 
 reload package.json command
-```bash
+```[bash]
+[bash]
 sudo npm cache clean -f
 sudo killall node
 sudo rm -r -f node_modules
@@ -53,14 +61,16 @@ sudo npm i
 ```
 
 firebase deploy fix.
-```package.json
+```[package.json]
+[package.json]
 firebase.json
   "hosting": {
     "public": "dist/spa",
 ```
 
 vscode install on ubuntu 18.04 LTS
-```bash
+```[bash]
+[bash]
 sudo apt install curl
 curl -L https://go.microsoft.com/fwlink/?LinkID=760868 -o vscode.deb
 sudo apt autoremove -y
@@ -74,22 +84,26 @@ git ssh Qiita
 https://qiita.com/knife0125/items/50b80ad45d21ddec61a9
 
 git ssh login settings.
-```vscode open terminal on vscode editor
+```[vscode open terminal on vscode editor]
+[vscode open terminal on vscode editor]
 Ctrl + Shift + 0
 ```
 
-```vsccode terminal
+```[vsccode terminal]
+[vsccode terminal]
 git config --global user.name 2f0833e717
 git config --global user.email skinoshita202001082135@gmail.com
 ```
 
 add remote repository.
-```vsccode terminal
+```[vsccode terminal]
+[vsccode terminal]
 git remote add origin https://github.com/2f0833e717/v3f
 ```
 
 get branch
-```vsccode terminal
+```vsccode terminal]
+[vsccode terminal]
 git branch
 git branch -a
 ```
