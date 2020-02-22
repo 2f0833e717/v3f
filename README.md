@@ -60,6 +60,12 @@ sudo rm -r -f package.lock.json
 sudo npm i
 ```
 
+get installed npm packages list command
+```
+sudo npm list --depth=0
+sudo npm list --depth=0 -g
+```
+
 firebase deploy fix.
 ```[package.json]
 [package.json]
