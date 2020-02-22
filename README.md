@@ -1,6 +1,22 @@
 # WIP...
 
-[install nodejs & npm(n package stable)]
+if you build & run
+```bash
+cat package.json
+```
+->>
+  "scripts": {
+  ...
+<<-
+how 2 use
+```bash
+npm run {scripts command}
+```
+```bash e.g. package.json ->> "dev": "quasar dev",
+npm run dev
+```
+
+[install nodejs & npm(n package stable)] on ubuntu 18.04 LTS
 ```bash step1
 sudo apt-get update
 sudo apt-get install -y nodejs
