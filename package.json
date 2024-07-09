@@ -37,7 +37,7 @@
     "lintfix": "npm run lintpath && eslint --fix --ext .js,.vue src"
   },
   "dependencies": {
-    "@quasar/extras": "1.10.4",
+    "@quasar/extras": "1.16.12",
     "eslint-config-vue": "2.0.2",
     "quasar": "1.15.15"
   },
